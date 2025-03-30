@@ -16,7 +16,7 @@
     <header id="header" class="fixed-top autohide">
         <div class="container d-flex align-items-center">
 
-            <h1 class="logo me-auto"><a href="{{ url('/') }}"><img src="https://taaply.education/assets/home_page/img/logoTaaply.png" alt=""></a></h1>
+            <h1 class="logo me-auto"><a href="{{ url('/') }}"><img src="{{ $settings['horizontal_logo'] ?? asset('assets/home_page/img/Logo.svg') }}" alt=""></a></h1>
 
             <nav id="navbar" class="navbar">
                 <ul>
@@ -65,13 +65,13 @@
 
     <!-- ======= Hero Section ======= -->
     <section id="hero" class="d-flex align-items-center">
-        <!--<img src="{{ asset('assets/home_page/img/book.png') }}" class="book-img d-none d-md-block" alt="">-->
-        <!--<img src="{{ asset('assets/home_page/img/calc.png') }}" class="calc-img d-none d-md-block" alt="">-->
-        <!--<img src="{{ asset('assets/home_page/img/cap.png') }}" class="cap-img d-none d-md-block" alt="">-->
-        <!--<img src="{{ asset('assets/home_page/img/glass.png') }}" class="glass-img d-none d-md-block" alt="">-->
-        <!--<img src="{{ asset('assets/home_page/img/idea.svg') }}" class="idea-img d-none d-md-block" alt="">-->
-        <!--<img src="{{ asset('assets/home_page/img/rocket.svg') }}" class="rocket-img d-none d-md-block" alt="">-->
-        <!--<img src="{{ asset('assets/home_page/img/scale.svg') }}" class="scale-img d-none d-md-block" alt="">-->
+        <img src="{{ asset('assets/home_page/img/book.png') }}" class="book-img d-none d-md-block" alt="">
+        <img src="{{ asset('assets/home_page/img/calc.png') }}" class="calc-img d-none d-md-block" alt="">
+        <img src="{{ asset('assets/home_page/img/cap.png') }}" class="cap-img d-none d-md-block" alt="">
+        <img src="{{ asset('assets/home_page/img/glass.png') }}" class="glass-img d-none d-md-block" alt="">
+        <img src="{{ asset('assets/home_page/img/idea.svg') }}" class="idea-img d-none d-md-block" alt="">
+        <img src="{{ asset('assets/home_page/img/rocket.svg') }}" class="rocket-img d-none d-md-block" alt="">
+        <img src="{{ asset('assets/home_page/img/scale.svg') }}" class="scale-img d-none d-md-block" alt="">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
@@ -79,7 +79,7 @@
                     <!-- <p class="saas">eSchool SaaS</p> -->
                     <label class="saas" for="">{{ $settings['system_name'] }}</label>
                     <!-- <div class="col-md-4"> -->
-                    <h1 class="title"> {{ $settings['tag_line'] ?? 'Taaply SALMS - Manage Your School' }} </h1>
+                    <h1 class="title"> {{ $settings['tag_line'] ?? 'eSchool-Saas - Manage Your School' }} </h1>
                     <label for="">
 
                     </label>
@@ -399,10 +399,10 @@
                 <div class="row">
 
                     <div class="col-lg-4 col-md-6 footer-contact">
-                        <a href="{{ url('/') }}"><img src="https://taaply.education/assets/home_page/img/logoTaaply.png" alt=""></a>
+                        <a href="{{ url('/') }}"><img src="{{ $settings['horizontal_logo'] ?? asset('assets/home_page/img/Logo.svg') }}" alt=""></a>
 
-                        <!--<h4><strong>{{ $settings['system_name'] ?? 'Taaply SALMS' }}</strong></h4>-->
-                        <p class="mt-4">Taaply SALMS (School and Learning Management System) is a comprehensive platform designed to streamline educational administration and enhance the learning experience. Our system offers robust tools for student management, curriculum planning, attendance tracking, and performance analytics. With user-friendly interfaces for educators, students, and parents, Taaply SALMS ensures efficient communication and effective learning outcomes. Discover how Taaply SALMS can transform your educational environment.</p>
+                        <h4><strong>{{ $settings['system_name'] ?? 'eSchool Virtual Education' }}</strong></h4>
+                        <p class="mt-4">{{ $settings['short_description'] ?? '' }}</p>
                     </div>
 
                     <div class="col-lg-4 col-md-6 footer-links">
@@ -445,10 +445,10 @@
 
         <hr>
         <div class="container footer-bottom clearfix text-center">
-            {!! $settings['footer_text'] ?? '<p>&copy; {{ date("Y") }} <strong><span><a href="https://taaply.education/" target="_blank"
-                rel="noopener noreferrer">Taaply</a></span></strong>. All Rights Reserved</p>' !!}
+            {!! $settings['footer_text'] ?? '<p>&copy; {{ date("Y") }} <strong><span><a href="https://wrteam.in/" target="_blank"
+                rel="noopener noreferrer">WRTeam</a></span></strong>. All Rights Reserved</p>' !!}
             {{-- &copy; {{ date('Y') }} <strong><span><a href="https://wrteam.in/" target="_blank"
-                        rel="noopener noreferrer">Taaply.com</a></span></strong>. All Rights Reserved --}}
+                        rel="noopener noreferrer">WRTeam</a></span></strong>. All Rights Reserved --}}
         </div>
     </footer><!-- End Footer -->
 

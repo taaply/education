@@ -77,10 +77,6 @@ Route::post('schools/registration', [SchoolController::class, 'registration']);
 Route::post('contact', [Controller::class, 'contact']);
 Route::get('subscription/cron-job', [Controller::class, 'cron_job']);
 Route::get('set-language/{lang}', [LanguageController::class, 'set_language']);
-Route::get('/offline', function () {
-    return view('offline');
-});
-
 
 Route::group(['prefix' => 'install'], static function () {
     Route::get('purchase-code', [InstallerController::class, 'purchaseCodeIndex'])->name('install.purchase-code.index');
@@ -710,14 +706,3 @@ Route::get('demo-tokens', static function () {
         });
     }
 });
-
-
-
-
-// Route::get('/link', function () {        
-//   $target = '/home/lekel683/taaply.education/storage/app/public';
-//   $shortcut = '/home/lekel683/taaply.education/public/storage';
-//   symlink($target, $shortcut);
-// });
-
-

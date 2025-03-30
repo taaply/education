@@ -2503,9 +2503,9 @@ body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #b8dcf5;
+    color: #343a40;
     text-align: left;
-    background-color: #b8dcf5;
+    background-color: #fff;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -4624,12 +4624,12 @@ pre code {
 }
 
 .table-striped tbody tr:nth-of-type(odd) {
-    background-color: #b8dcf5;
+    background-color: #f2edf3;
 }
 
 .table-hover tbody tr:hover {
     color: #212529;
-    background-color: #b8dcf5;
+    background-color: #f2edf3;
 }
 
 .table-primary,
@@ -11141,7 +11141,7 @@ a.close.disabled {
     flex-direction: column;
     width: 100%;
     pointer-events: auto;
-    background-color: #b8dcf5;
+    background-color: #f2edf3;
     background-clip: padding-box;
     border: 1px solid #ebedf2;
     border-radius: 0.3rem;
@@ -16768,7 +16768,6 @@ body {
     font-weight: initial;
     line-height: normal;
     -webkit-font-smoothing: antialiased;
-    color: #000;
 }
 
 h1,
@@ -17043,7 +17042,7 @@ code {
 }
 
 .footer {
-    background: #b8dcf5;
+    background: #f2edf3;
     border-top: 1px solid #e7dee9;
     padding: 30px 1rem;
     transition: all 0.25s ease;
@@ -23961,7 +23960,7 @@ dl li {
     border-radius: 2px;
     padding: 20px;
     position: relative;
-    background: #b8dcf5;
+    background: #f2edf3;
     border-radius: 6px;
     -webkit-box-shadow: 1px 2px 35px 0 rgba(1, 1, 1, 0.1);
     box-shadow: 1px 2px 35px 0 rgba(1, 1, 1, 0.1);
@@ -27853,7 +27852,7 @@ div.tagsinput span.tag a {
 }
 
 .wizard>.content {
-    background: #b8dcf5;
+    background: #f2edf3;
     display: block;
     margin: 0.5em;
     min-height: 24em;
@@ -28451,7 +28450,7 @@ div.tagsinput span.tag a {
 .auth.multi-step-login {
     height: 100%;
     min-height: 100vh;
-    background: #b8dcf5;
+    background: #f2edf3;
 }
 
 .auth.multi-step-login .step-form {
@@ -29456,7 +29455,7 @@ footer h4 a {
 }
 
 .chat-app-wrapper .chat-container-wrapper .chat-bubble.incoming-chat .chat-message {
-    background: #b8dcf5;
+    background: #f2edf3;
     margin-left: 45px;
 }
 
@@ -30289,7 +30288,7 @@ footer h4 a {
     right: 10px;
     z-index: 99;
     padding: 5px;
-    background: #b8dcf5;
+    background: #f2edf3;
     border-radius: 4px;
     -webkit-box-shadow: 0px 0px 15px -2px rgba(0, 0, 0, 0.4);
     box-shadow: 0px 0px 15px -2px rgba(0, 0, 0, 0.4);
@@ -30396,7 +30395,7 @@ footer h4 a {
 .navbar .navbar-brand-wrapper .navbar-brand img {
     width: calc(260px - 120px);
     max-width: 100%;
-    height: 47px;
+    height: 40px;
     margin: auto;
     vertical-align: middle;
 }
@@ -30408,7 +30407,7 @@ footer h4 a {
 .navbar .navbar-brand-wrapper .navbar-brand.brand-logo-mini img {
     width: calc(70px - 50px);
     max-width: 100%;
-    height: 20px;
+    height: 28px;
     margin: auto;
 }
 
@@ -31061,7 +31060,7 @@ footer h4 a {
     font-size: 1.125rem;
     line-height: 1;
     margin-left: auto;
-    color: #b8dcf5;
+    color: #bba8bff5;
 }
 
 .rtl .sidebar .nav .nav-item .nav-link i.menu-icon {
@@ -31263,7 +31262,7 @@ footer h4 a {
 }
 
 .sidebar-dark .sidebar .nav .nav-item .nav-link i.menu-icon {
-    color: #b8dcf5;
+    color: #bba8bff5;
 }
 
 .sidebar-dark .sidebar .nav .nav-item .nav-link i.menu-arrow {
@@ -31782,7 +31781,7 @@ footer h4 a {
 }
 
 .content-wrapper {
-    background: #b8dcf5;
+    background: #f2edf3;
     padding: 1.75rem 1.25rem;
     width: 100%;
     -webkit-box-flex: 1;

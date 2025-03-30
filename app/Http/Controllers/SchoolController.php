@@ -42,7 +42,6 @@ class SchoolController extends Controller {
 
 
     public function index() {
-        //dd('ook');
         ResponseService::noPermissionThenRedirect('schools-list');
         $packages = $this->package->builder()->orderBy('rank')->pluck('name','id')->toArray();
 
@@ -50,7 +49,6 @@ class SchoolController extends Controller {
     }
 
     public function store(Request $request) {
-        //dd('ok');
         ResponseService::noAnyPermissionThenRedirect(['schools-create']);
         $validator = Validator::make($request->all(), [
             'school_name'          => 'required',
@@ -112,10 +110,8 @@ class SchoolController extends Controller {
                 // Check selected plan is trail or regular plan
                 if ($package->is_trial) {
                     $end_date = Carbon::now()->addDays(($systemSettings['trial_days']))->format('Y-m-d');
-                    //dd($end_date);
                 } else {
                     $end_date = Carbon::now()->addDays(($systemSettings['billing_cycle_in_days'] - 1))->format('Y-m-d');
-                    //dd('a');
                 }
                 $subscription_data = [
                     'school_id' => $schoolData->id,

@@ -60,7 +60,6 @@ class StudentController extends Controller {
     }
 
     public function create() {
-        
         ResponseService::noPermissionThenRedirect('student-create');
         $class_sections = $this->classSection->all(['*'], ['class', 'class.stream', 'section', 'medium']);
         $sessionYear = $this->cache->getDefaultSessionYear();
@@ -73,7 +72,6 @@ class StudentController extends Controller {
     }
 
     public function store(Request $request) {
-        //dd($request->all());
         ResponseService::noPermissionThenRedirect(['student-create']);
         $request->validate([
             'first_name'          => 'required',

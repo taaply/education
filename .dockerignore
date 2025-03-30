@@ -1,6 +1,0 @@
-node_modules
-vendor
-.git
-composer.lock
-storage/logs
-storage/framework

@@ -6,8 +6,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link rel="manifest" href="{{ asset('manifest.json') }}">
-    <meta name="theme-color" content="#000000">
 
     <title>{{ __('login') }} || {{ config('app.name') }}</title>
 
@@ -28,7 +26,7 @@
                         @endif
                         <div class="auth-form-light rounded-lg text-left p-5">
                             <div class="brand-logo text-center">
-                                <img src="https://taaply.education/assets/home_page/img/logoTaaply.png"
+                                <img src="{{ $systemSettings['login_page_logo'] ?? url('assets/horizontal-logo.svg') }}"
                                     alt="logo">
                             </div>
                             <div class="mt-3">
@@ -245,16 +243,5 @@
         </script>
     @endforeach
 @endif
-<script>
-    if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/serviceworker.js')
-            .then(function(registration) {
-                console.log('Service Worker registered with scope:', registration.scope);
-            })
-            .catch(function(error) {
-                console.log('Service Worker registration failed:', error);
-            });
-    }
-</script>
 
 </html>
